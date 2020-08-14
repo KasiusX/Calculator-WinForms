@@ -1,6 +1,6 @@
 ﻿namespace Calculator
 {
-    partial class Form1
+    partial class CalculatorForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CalculatorForm));
             this.fourButton = new System.Windows.Forms.Button();
             this.fiveButton = new System.Windows.Forms.Button();
             this.sixButton = new System.Windows.Forms.Button();
@@ -37,7 +37,7 @@
             this.twoButton = new System.Windows.Forms.Button();
             this.threeButton = new System.Windows.Forms.Button();
             this.equalButton = new System.Windows.Forms.Button();
-            this.negateButton = new System.Windows.Forms.Button();
+            this.plusButton = new System.Windows.Forms.Button();
             this.dividetButton = new System.Windows.Forms.Button();
             this.seventButton = new System.Windows.Forms.Button();
             this.deleteCurrentNumberButton = new System.Windows.Forms.Button();
@@ -46,11 +46,12 @@
             this.nineButton = new System.Windows.Forms.Button();
             this.timesButton = new System.Windows.Forms.Button();
             this.resultsPanel = new System.Windows.Forms.Panel();
+            this.preivousNumberLabel = new System.Windows.Forms.Label();
             this.resultLabelValue = new System.Windows.Forms.Label();
             this.zeroButton = new System.Windows.Forms.Button();
             this.dotButton = new System.Windows.Forms.Button();
             this.deleteAllButton = new System.Windows.Forms.Button();
-            this.preivousNumber = new System.Windows.Forms.Label();
+            this.negateButton = new System.Windows.Forms.Button();
             this.resultsPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,6 +69,7 @@
             this.fourButton.TabIndex = 0;
             this.fourButton.Text = "4";
             this.fourButton.UseVisualStyleBackColor = false;
+            this.fourButton.Click += new System.EventHandler(this.AddToResultButtons_Click);
             // 
             // fiveButton
             // 
@@ -83,6 +85,7 @@
             this.fiveButton.TabIndex = 0;
             this.fiveButton.Text = "5";
             this.fiveButton.UseVisualStyleBackColor = false;
+            this.fiveButton.Click += new System.EventHandler(this.AddToResultButtons_Click);
             // 
             // sixButton
             // 
@@ -98,6 +101,7 @@
             this.sixButton.TabIndex = 0;
             this.sixButton.Text = "6";
             this.sixButton.UseVisualStyleBackColor = false;
+            this.sixButton.Click += new System.EventHandler(this.AddToResultButtons_Click);
             // 
             // minusButton
             // 
@@ -128,6 +132,7 @@
             this.oneButton.TabIndex = 0;
             this.oneButton.Text = "1";
             this.oneButton.UseVisualStyleBackColor = false;
+            this.oneButton.Click += new System.EventHandler(this.AddToResultButtons_Click);
             // 
             // twoButton
             // 
@@ -143,6 +148,7 @@
             this.twoButton.TabIndex = 0;
             this.twoButton.Text = "2";
             this.twoButton.UseVisualStyleBackColor = false;
+            this.twoButton.Click += new System.EventHandler(this.AddToResultButtons_Click);
             // 
             // threeButton
             // 
@@ -158,6 +164,7 @@
             this.threeButton.TabIndex = 0;
             this.threeButton.Text = "3";
             this.threeButton.UseVisualStyleBackColor = false;
+            this.threeButton.Click += new System.EventHandler(this.AddToResultButtons_Click);
             // 
             // equalButton
             // 
@@ -167,27 +174,27 @@
             this.equalButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
             this.equalButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.equalButton.Font = new System.Drawing.Font("Lucida Sans Typewriter", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.equalButton.Location = new System.Drawing.Point(270, 393);
+            this.equalButton.Location = new System.Drawing.Point(270, 479);
             this.equalButton.Name = "equalButton";
             this.equalButton.Size = new System.Drawing.Size(80, 80);
             this.equalButton.TabIndex = 0;
             this.equalButton.Text = "=";
             this.equalButton.UseVisualStyleBackColor = false;
             // 
-            // negateButton
+            // plusButton
             // 
-            this.negateButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.negateButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.negateButton.FlatAppearance.BorderSize = 2;
-            this.negateButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
-            this.negateButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.negateButton.Font = new System.Drawing.Font("Lucida Sans Typewriter", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.negateButton.Location = new System.Drawing.Point(270, 479);
-            this.negateButton.Name = "negateButton";
-            this.negateButton.Size = new System.Drawing.Size(80, 80);
-            this.negateButton.TabIndex = 0;
-            this.negateButton.Text = "+/-";
-            this.negateButton.UseVisualStyleBackColor = false;
+            this.plusButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.plusButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.plusButton.FlatAppearance.BorderSize = 2;
+            this.plusButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
+            this.plusButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.plusButton.Font = new System.Drawing.Font("Lucida Sans Typewriter", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plusButton.Location = new System.Drawing.Point(270, 393);
+            this.plusButton.Name = "plusButton";
+            this.plusButton.Size = new System.Drawing.Size(80, 80);
+            this.plusButton.TabIndex = 0;
+            this.plusButton.Text = "+";
+            this.plusButton.UseVisualStyleBackColor = false;
             // 
             // dividetButton
             // 
@@ -218,6 +225,7 @@
             this.seventButton.TabIndex = 0;
             this.seventButton.Text = "7";
             this.seventButton.UseVisualStyleBackColor = false;
+            this.seventButton.Click += new System.EventHandler(this.AddToResultButtons_Click);
             // 
             // deleteCurrentNumberButton
             // 
@@ -233,6 +241,7 @@
             this.deleteCurrentNumberButton.TabIndex = 0;
             this.deleteCurrentNumberButton.Text = "C";
             this.deleteCurrentNumberButton.UseVisualStyleBackColor = false;
+            this.deleteCurrentNumberButton.Click += new System.EventHandler(this.deleteCurrentNumberButton_Click);
             // 
             // eightButton
             // 
@@ -248,6 +257,7 @@
             this.eightButton.TabIndex = 0;
             this.eightButton.Text = "8";
             this.eightButton.UseVisualStyleBackColor = false;
+            this.eightButton.Click += new System.EventHandler(this.AddToResultButtons_Click);
             // 
             // deleteOneNumberButton
             // 
@@ -263,6 +273,7 @@
             this.deleteOneNumberButton.TabIndex = 0;
             this.deleteOneNumberButton.Text = "<=";
             this.deleteOneNumberButton.UseVisualStyleBackColor = false;
+            this.deleteOneNumberButton.Click += new System.EventHandler(this.deleteOneNumberButton_Click);
             // 
             // nineButton
             // 
@@ -278,6 +289,7 @@
             this.nineButton.TabIndex = 0;
             this.nineButton.Text = "9";
             this.nineButton.UseVisualStyleBackColor = false;
+            this.nineButton.Click += new System.EventHandler(this.AddToResultButtons_Click);
             // 
             // timesButton
             // 
@@ -297,18 +309,27 @@
             // resultsPanel
             // 
             this.resultsPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.resultsPanel.Controls.Add(this.preivousNumber);
+            this.resultsPanel.Controls.Add(this.preivousNumberLabel);
             this.resultsPanel.Controls.Add(this.resultLabelValue);
             this.resultsPanel.Location = new System.Drawing.Point(12, 12);
             this.resultsPanel.Name = "resultsPanel";
             this.resultsPanel.Size = new System.Drawing.Size(338, 98);
             this.resultsPanel.TabIndex = 1;
             // 
+            // preivousNumberLabel
+            // 
+            this.preivousNumberLabel.AutoSize = true;
+            this.preivousNumberLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.preivousNumberLabel.Location = new System.Drawing.Point(3, 0);
+            this.preivousNumberLabel.Name = "preivousNumberLabel";
+            this.preivousNumberLabel.Size = new System.Drawing.Size(0, 33);
+            this.preivousNumberLabel.TabIndex = 2;
+            // 
             // resultLabelValue
             // 
             this.resultLabelValue.AutoSize = true;
             this.resultLabelValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.resultLabelValue.Location = new System.Drawing.Point(3, 54);
+            this.resultLabelValue.Location = new System.Drawing.Point(294, 54);
             this.resultLabelValue.Name = "resultLabelValue";
             this.resultLabelValue.Size = new System.Drawing.Size(39, 42);
             this.resultLabelValue.TabIndex = 2;
@@ -322,12 +343,13 @@
             this.zeroButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
             this.zeroButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.zeroButton.Font = new System.Drawing.Font("Lucida Sans Typewriter", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.zeroButton.Location = new System.Drawing.Point(12, 479);
+            this.zeroButton.Location = new System.Drawing.Point(98, 479);
             this.zeroButton.Name = "zeroButton";
-            this.zeroButton.Size = new System.Drawing.Size(166, 80);
+            this.zeroButton.Size = new System.Drawing.Size(80, 80);
             this.zeroButton.TabIndex = 0;
             this.zeroButton.Text = "0";
             this.zeroButton.UseVisualStyleBackColor = false;
+            this.zeroButton.Click += new System.EventHandler(this.AddToResultButtons_Click);
             // 
             // dotButton
             // 
@@ -341,8 +363,9 @@
             this.dotButton.Name = "dotButton";
             this.dotButton.Size = new System.Drawing.Size(80, 80);
             this.dotButton.TabIndex = 0;
-            this.dotButton.Text = ",";
+            this.dotButton.Text = ".";
             this.dotButton.UseVisualStyleBackColor = false;
+            this.dotButton.Click += new System.EventHandler(this.AddToResultButtons_Click);
             // 
             // deleteAllButton
             // 
@@ -359,16 +382,22 @@
             this.deleteAllButton.Text = "CE";
             this.deleteAllButton.UseVisualStyleBackColor = false;
             // 
-            // preivousNumber
+            // negateButton
             // 
-            this.preivousNumber.AutoSize = true;
-            this.preivousNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.preivousNumber.Location = new System.Drawing.Point(3, 0);
-            this.preivousNumber.Name = "preivousNumber";
-            this.preivousNumber.Size = new System.Drawing.Size(0, 33);
-            this.preivousNumber.TabIndex = 2;
+            this.negateButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.negateButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.negateButton.FlatAppearance.BorderSize = 2;
+            this.negateButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
+            this.negateButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.negateButton.Font = new System.Drawing.Font("Lucida Sans Typewriter", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.negateButton.Location = new System.Drawing.Point(12, 479);
+            this.negateButton.Name = "negateButton";
+            this.negateButton.Size = new System.Drawing.Size(80, 80);
+            this.negateButton.TabIndex = 0;
+            this.negateButton.Text = "+/-";
+            this.negateButton.UseVisualStyleBackColor = false;
             // 
-            // Form1
+            // CalculatorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -392,10 +421,11 @@
             this.Controls.Add(this.dividetButton);
             this.Controls.Add(this.oneButton);
             this.Controls.Add(this.negateButton);
+            this.Controls.Add(this.plusButton);
             this.Controls.Add(this.fiveButton);
             this.Controls.Add(this.fourButton);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
+            this.Name = "CalculatorForm";
             this.Text = "Calculator";
             this.resultsPanel.ResumeLayout(false);
             this.resultsPanel.PerformLayout();
@@ -413,7 +443,7 @@
         private System.Windows.Forms.Button twoButton;
         private System.Windows.Forms.Button threeButton;
         private System.Windows.Forms.Button equalButton;
-        private System.Windows.Forms.Button negateButton;
+        private System.Windows.Forms.Button plusButton;
         private System.Windows.Forms.Button dividetButton;
         private System.Windows.Forms.Button seventButton;
         private System.Windows.Forms.Button deleteCurrentNumberButton;
@@ -426,7 +456,8 @@
         private System.Windows.Forms.Button zeroButton;
         private System.Windows.Forms.Button dotButton;
         private System.Windows.Forms.Button deleteAllButton;
-        private System.Windows.Forms.Label preivousNumber;
+        private System.Windows.Forms.Label preivousNumberLabel;
+        private System.Windows.Forms.Button negateButton;
     }
 }
 
