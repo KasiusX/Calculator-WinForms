@@ -182,7 +182,6 @@ namespace Calculator
             }
         }
 
-
         private void KeyDownPress(object sender, KeyEventArgs e)
         {
             if(e.KeyData == Keys.Back)
