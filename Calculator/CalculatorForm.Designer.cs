@@ -70,6 +70,8 @@
             this.fourButton.Text = "4";
             this.fourButton.UseVisualStyleBackColor = false;
             this.fourButton.Click += new System.EventHandler(this.AddToResultButtons_Click);
+            this.fourButton.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressed);
+            this.fourButton.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyDownPress);
             // 
             // fiveButton
             // 
@@ -86,6 +88,8 @@
             this.fiveButton.Text = "5";
             this.fiveButton.UseVisualStyleBackColor = false;
             this.fiveButton.Click += new System.EventHandler(this.AddToResultButtons_Click);
+            this.fiveButton.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressed);
+            this.fiveButton.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyDownPress);
             // 
             // sixButton
             // 
@@ -102,6 +106,8 @@
             this.sixButton.Text = "6";
             this.sixButton.UseVisualStyleBackColor = false;
             this.sixButton.Click += new System.EventHandler(this.AddToResultButtons_Click);
+            this.sixButton.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressed);
+            this.sixButton.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyDownPress);
             // 
             // minusButton
             // 
@@ -118,6 +124,8 @@
             this.minusButton.Text = "-";
             this.minusButton.UseVisualStyleBackColor = false;
             this.minusButton.Click += new System.EventHandler(this.AddCalculationButtons_Click);
+            this.minusButton.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressed);
+            this.minusButton.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyDownPress);
             // 
             // oneButton
             // 
@@ -134,6 +142,8 @@
             this.oneButton.Text = "1";
             this.oneButton.UseVisualStyleBackColor = false;
             this.oneButton.Click += new System.EventHandler(this.AddToResultButtons_Click);
+            this.oneButton.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressed);
+            this.oneButton.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyDownPress);
             // 
             // twoButton
             // 
@@ -150,6 +160,8 @@
             this.twoButton.Text = "2";
             this.twoButton.UseVisualStyleBackColor = false;
             this.twoButton.Click += new System.EventHandler(this.AddToResultButtons_Click);
+            this.twoButton.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressed);
+            this.twoButton.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyDownPress);
             // 
             // threeButton
             // 
@@ -166,6 +178,8 @@
             this.threeButton.Text = "3";
             this.threeButton.UseVisualStyleBackColor = false;
             this.threeButton.Click += new System.EventHandler(this.AddToResultButtons_Click);
+            this.threeButton.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressed);
+            this.threeButton.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyDownPress);
             // 
             // equalButton
             // 
@@ -182,6 +196,8 @@
             this.equalButton.Text = "=";
             this.equalButton.UseVisualStyleBackColor = false;
             this.equalButton.Click += new System.EventHandler(this.equalButton_Click);
+            this.equalButton.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressed);
+            this.equalButton.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyDownPress);
             // 
             // plusButton
             // 
@@ -198,6 +214,8 @@
             this.plusButton.Text = "+";
             this.plusButton.UseVisualStyleBackColor = false;
             this.plusButton.Click += new System.EventHandler(this.AddCalculationButtons_Click);
+            this.plusButton.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressed);
+            this.plusButton.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyDownPress);
             // 
             // dividetButton
             // 
@@ -214,6 +232,8 @@
             this.dividetButton.Text = "/";
             this.dividetButton.UseVisualStyleBackColor = false;
             this.dividetButton.Click += new System.EventHandler(this.AddCalculationButtons_Click);
+            this.dividetButton.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressed);
+            this.dividetButton.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyDownPress);
             // 
             // seventButton
             // 
@@ -230,6 +250,8 @@
             this.seventButton.Text = "7";
             this.seventButton.UseVisualStyleBackColor = false;
             this.seventButton.Click += new System.EventHandler(this.AddToResultButtons_Click);
+            this.seventButton.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressed);
+            this.seventButton.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyDownPress);
             // 
             // deleteCurrentNumberButton
             // 
@@ -246,6 +268,8 @@
             this.deleteCurrentNumberButton.Text = "C";
             this.deleteCurrentNumberButton.UseVisualStyleBackColor = false;
             this.deleteCurrentNumberButton.Click += new System.EventHandler(this.deleteCurrentNumberButton_Click);
+            this.deleteCurrentNumberButton.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressed);
+            this.deleteCurrentNumberButton.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyDownPress);
             // 
             // eightButton
             // 
@@ -262,6 +286,8 @@
             this.eightButton.Text = "8";
             this.eightButton.UseVisualStyleBackColor = false;
             this.eightButton.Click += new System.EventHandler(this.AddToResultButtons_Click);
+            this.eightButton.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressed);
+            this.eightButton.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyDownPress);
             // 
             // deleteOneNumberButton
             // 
@@ -278,6 +304,8 @@
             this.deleteOneNumberButton.Text = "<=";
             this.deleteOneNumberButton.UseVisualStyleBackColor = false;
             this.deleteOneNumberButton.Click += new System.EventHandler(this.deleteOneNumberButton_Click);
+            this.deleteOneNumberButton.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressed);
+            this.deleteOneNumberButton.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyDownPress);
             // 
             // nineButton
             // 
@@ -294,6 +322,8 @@
             this.nineButton.Text = "9";
             this.nineButton.UseVisualStyleBackColor = false;
             this.nineButton.Click += new System.EventHandler(this.AddToResultButtons_Click);
+            this.nineButton.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressed);
+            this.nineButton.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyDownPress);
             // 
             // timesButton
             // 
@@ -310,6 +340,8 @@
             this.timesButton.Text = "*";
             this.timesButton.UseVisualStyleBackColor = false;
             this.timesButton.Click += new System.EventHandler(this.AddCalculationButtons_Click);
+            this.timesButton.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressed);
+            this.timesButton.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyDownPress);
             // 
             // resultsPanel
             // 
@@ -356,6 +388,8 @@
             this.zeroButton.Text = "0";
             this.zeroButton.UseVisualStyleBackColor = false;
             this.zeroButton.Click += new System.EventHandler(this.AddToResultButtons_Click);
+            this.zeroButton.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressed);
+            this.zeroButton.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyDownPress);
             // 
             // dotButton
             // 
@@ -372,6 +406,8 @@
             this.dotButton.Text = ".";
             this.dotButton.UseVisualStyleBackColor = false;
             this.dotButton.Click += new System.EventHandler(this.AddToResultButtons_Click);
+            this.dotButton.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressed);
+            this.dotButton.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyDownPress);
             // 
             // deleteAllButton
             // 
@@ -388,6 +424,8 @@
             this.deleteAllButton.Text = "CE";
             this.deleteAllButton.UseVisualStyleBackColor = false;
             this.deleteAllButton.Click += new System.EventHandler(this.deleteAllButton_Click);
+            this.deleteAllButton.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressed);
+            this.deleteAllButton.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyDownPress);
             // 
             // negateButton
             // 
@@ -404,6 +442,8 @@
             this.negateButton.Text = "+/-";
             this.negateButton.UseVisualStyleBackColor = false;
             this.negateButton.Click += new System.EventHandler(this.negateButton_Click);
+            this.negateButton.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressed);
+            this.negateButton.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyDownPress);
             // 
             // CalculatorForm
             // 
@@ -435,6 +475,8 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CalculatorForm";
             this.Text = "Calculator";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDownPress);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressed);
             this.resultsPanel.ResumeLayout(false);
             this.resultsPanel.PerformLayout();
             this.ResumeLayout(false);
